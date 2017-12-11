@@ -1,0 +1,87 @@
+%\documentclass[12pt]{article}
+%\usepackage{amsmath}
+%\usepackage{natbib}
+%\usepackage[utf8]{inputenc}
+%\usepackage{graphicx}
+%\usepackage{subcaption}
+%\usepackage{float}
+%
+%%\usepackage{fancyhdr}
+%%\fancyhf{}
+%%\fancyhead[R]{\thepage}
+%
+%
+%
+% \begin{document}
+%% \pagestyle{fancy}
+%
+%\title{C++ Webserver - APK exam project}
+%\author{Mikkel Poulsen, Lars Hjerrild, Søren Holm}
+%
+%\maketitle
+%\thispagestyle{empty}
+%
+%\newpage
+%\tableofcontents
+%
+%
+%\newpage\section{Introduction}
+%%
+%%
+%%Eksempler på figure \ref{fig:coffee}
+%%
+%%Random citation \citep{DUMMY:1} embeddeed in text.
+%%
+%%\begin{figure}[h!]
+%%	\includegraphics[width=\linewidth]{Figures/Arduino.png}
+%%	\caption{Example include.}
+%%	\label{fig:examplefig}
+%%\end{figure}
+%%
+%%\begin{figure}[h!]
+%%	\centering
+%%	\begin{subfigure}[b]{0.4\linewidth}
+%%		\includegraphics[width=\linewidth]{Figures/Arduino.png}
+%%		\caption{Coffee.}
+%%	\end{subfigure}
+%%	\begin{subfigure}[b]{0.4\linewidth}
+%%		\includegraphics[width=\linewidth]{Figures/Arduino.png}
+%%		\caption{More coffee.}
+%%	\end{subfigure}
+%%	\caption{The same cup of coffee. Two times.}
+%%	\label{fig:coffee}
+%%\end{figure}\newpage
+%%
+%% \listoffigures
+%% \listoftables
+%
+% \bibliography{Auto} 
+% \bibliographystyle{abbrvnat}
+% 
+%\end{document}
+
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[comma]{natbib}
+\usepackage{har2nat}
+\bibliographystyle{agsm}
+%% or: apsr, dcu, jmr, jphysicsB, kluwer
+\usepackage{filecontents}
+\begin{filecontents*}{\jobname.bib}
+	@incollection{simmons:1980,
+		author    = "N. M. Simmons",
+		title     = "Behaviour",
+		pages     = "124-44",
+		year      = 1980,
+		booktitle = "The Desert Bighorn",
+		editor    = "Gale Monson and Lowell Summer",
+		publisher = "University of Arizona Press",
+		address   = "Tucson, AZ",
+	}
+\end{filecontents*}
+\begin{document}\pagestyle{empty}
+	\citep{simmons:1980}
+	\bibliography{\jobname}
+\end{document}
